@@ -1,0 +1,18 @@
+{
+  "name": "重慶六日行程｜山城獨旅",
+  "short_name": "重慶行程",
+  "description": "2026/09/11—09/16 成都出發、重慶五晚與直飛高雄行程",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fbf8f2",
+  "theme_color": "#0c2031",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "assets/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

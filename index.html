@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0c2031">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="2026 年 9 月 11 日至 16 日，成都出發、重慶市區、武隆與直飛高雄的 6 天 5 夜獨旅行程。">
+  <title>重慶六日行程｜山城獨旅</title>
+  <link rel="manifest" href="manifest.webmanifest?v=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=1">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="回到頁首"><span class="brand-mark">渝</span><span>重慶六日行程</span></a>
+    <nav aria-label="主要導覽">
+      <a href="#route">每日行程</a><a href="#guide">景點介紹</a><a href="#map">旅行地圖</a><a href="#booking">預約提醒</a><a href="#prepare">行前清單</a>
+    </nav>
+    <div class="header-actions"><button class="parent-mode-button" id="parentMode" type="button" aria-label="切換大字閱讀" aria-pressed="false"><i data-lucide="glasses"></i><span>閱讀大字</span></button><button class="icon-button saved-button" type="button" aria-label="查看收藏" data-tooltip="我的收藏"><i data-lucide="heart"></i><span id="savedCount">0</span></button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="overview" aria-labelledby="hero-title">
+      <img src="assets/chongqing-hero.png" alt="入夜後的重慶山城、江面與穿樓軌道列車" fetchpriority="high">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">2026/09/11—09/16 · 6 天 5 夜</p>
+        <h1 id="hero-title">成都・重慶<br>山城獨旅</h1>
+        <p class="hero-copy">送爸媽搭機後，從成都前往重慶。五晚住解放碑，走老城、輕軌、武隆與南岸，最後直飛高雄。</p>
+        <div class="hero-actions"><a class="primary-button" href="#route">查看 6 天行程 <i data-lucide="arrow-down"></i></a><a class="ghost-button" href="#guide">看景點介紹 <i data-lucide="landmark"></i></a></div>
+      </div>
+      <div class="trip-stamp" aria-label="旅行摘要"><span>重慶續篇</span><strong id="countdown">準備出發</strong><small>重慶 5 晚 · 武隆 1 日 · 高雄直飛</small></div>
+    </section>
+
+    <section class="trip-control-section" aria-labelledby="control-title">
+      <div class="control-heading">
+        <div><p class="eyebrow dark">6 天總覽</p><h2 id="control-title">選一天查看安排</h2><p>切換日期會同步更新每日行程、景點介紹和地圖路線。</p></div>
+        <div class="overview-utilities">
+          <div class="readiness-card" aria-live="polite">
+            <div class="readiness-ring" id="readinessRing"><strong id="readinessPercent">0%</strong></div>
+            <div><span>行前準備</span><strong id="readinessText">0／10 已完成</strong><small>依行前清單計算</small></div>
+          </div>
+          <div class="utility-buttons">
+            <button type="button" id="shareTrip"><i data-lucide="share-2"></i> 分享</button>
+            <button type="button" id="installTrip"><i data-lucide="download"></i> 加入主畫面</button>
+          </div>
+        </div>
+      </div>
+      <div class="all-days-grid" id="allDaysGrid"></div>
+    </section>
+
+    <section class="section route-section" id="route">
+      <div class="section-heading"><div><p class="eyebrow dark">每日行程</p><h2>9/11—9/16 怎麼走</h2></div><p>點選日期，查看當天時間、交通順序、住宿與注意事項。</p></div>
+      <div class="mobile-day-picker"><label for="mobileDaySelect">快速切換日期</label><select id="mobileDaySelect" aria-label="選擇行程日期"></select></div>
+      <div class="day-tabs eight-days" id="dayTabs" role="tablist" aria-label="每日行程"></div>
+      <div class="day-overview" id="dayOverview" aria-live="polite"></div>
+      <div id="timeline" class="timeline" aria-live="polite"></div>
+    </section>
+
+    <section class="parent-guide-section" id="guide">
+      <div class="guide-title-row">
+        <div><p class="eyebrow">當日補充</p><h2>景點介紹與提醒</h2><p>行程順序只看上方；這裡保留照片、重點與備案。</p></div>
+        <div class="guide-actions"><button type="button" id="copyDayGuide"><i data-lucide="copy"></i> 複製當日摘要</button><button type="button" id="toggleLargeGuide"><i data-lucide="type"></i> 放大文字</button></div>
+      </div>
+      <div class="parent-guide-card" id="parentGuide" aria-live="polite"></div>
+    </section>
+
+    <section class="map-section" id="map">
+      <div class="map-heading">
+        <div><p class="eyebrow">交通與景點位置</p><h2>每天走哪一段</h2><p>按 D1–D6 顯示當天路線；點景點可查看說明、收藏或開啟導航。</p></div>
+        <div class="map-search-wrap"><i data-lucide="search"></i><input id="mapSearch" type="search" placeholder="搜尋洪崖洞、李子壩、武隆…" aria-label="搜尋地圖地點"><button id="clearMapSearch" type="button" aria-label="清除搜尋" data-tooltip="清除"><i data-lucide="x"></i></button></div>
+      </div>
+      <div class="map-toolbar">
+        <div class="map-filters" role="group" aria-label="地點分類"><button type="button" class="active" data-map-filter="all">全部</button><button type="button" data-map-filter="sight"><span class="filter-dot sight"></span>景點</button><button type="button" data-map-filter="transport"><span class="filter-dot transport"></span>交通</button><button type="button" data-map-filter="stay"><span class="filter-dot stay"></span>住宿</button></div>
+        <div class="route-filters" role="group" aria-label="顯示每日路線"><button type="button" class="active" data-map-day="all">全覽</button><button type="button" data-map-day="0">D1</button><button type="button" data-map-day="1">D2</button><button type="button" data-map-day="2">D3</button><button type="button" data-map-day="3">D4</button><button type="button" data-map-day="4">D5</button><button type="button" data-map-day="5">D6</button></div>
+        <label class="map-day-select"><span>選擇日期</span><select id="mapDaySelect" aria-label="選擇地圖日期"><option value="all">全部 6 天</option></select></label>
+      </div>
+      <div class="map-context" id="mapContext" aria-live="polite"></div>
+      <div class="map-shell"><div id="travelMap" aria-label="成都與重慶互動旅遊地圖"></div><aside class="map-panel" aria-label="地圖地點清單"><div class="map-panel-head"><strong id="mapResultCount">0 個地點</strong><button id="fitMap" type="button"><i data-lucide="scan"></i> 顯示全部</button></div><div id="mapPlaceList" class="map-place-list"></div><div id="mapEmpty" class="map-empty" hidden><i data-lucide="map-pin-off"></i><strong>找不到符合的地點</strong><span>換個關鍵字或清除篩選試試看。</span></div></aside></div>
+      <div class="map-legend"><span><i class="legend-marker sight">景</i>景點</span><span><i class="legend-marker transport">車</i>機場／車站</span><span><i class="legend-marker stay">住</i>住宿區</span><small>數字是當日順序；橘色虛線只連接停靠點，不代表實際道路。</small></div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="booking-heading"><p class="eyebrow dark">出發前要完成</p><h2>機票、車票與門票</h2><p>先鎖定 9/16 重慶直飛高雄，再買成都到重慶高鐵；武隆與長江索道最後處理。</p></div>
+      <div class="booking-grid">
+        <article class="booking-card priority"><div><span>最優先 · 9/16</span><i data-lucide="plane"></i></div><h3>CI594 重慶 → 高雄</h3><strong>20:05 → 22:55</strong><p>目前每週三一班直飛；先確認票價、行李額度與可售座位，再決定其他可取消項目。</p><a href="https://www.china-airlines.com/tw/zh" target="_blank" rel="noreferrer">華航官網 <i data-lucide="external-link"></i></a></article>
+        <article class="booking-card"><div><span>8/28 開售 · 9/11</span><i data-lucide="train-front"></i></div><h3>成都 → 重慶高鐵</h3><strong>下午或傍晚班次</strong><p>先確認爸媽從 TFU 或 CTU 起飛，再決定由天府機場站、雙流機場站或成都東站上車。</p><a href="https://www.12306.cn/" target="_blank" rel="noreferrer">前往 12306 <i data-lucide="external-link"></i></a></article>
+        <article class="booking-card"><div><span>重點 · 9/14</span><i data-lucide="mountain"></i></div><h3>武隆一日遊</h3><strong>天生三橋＋龍水峽地縫</strong><p>選正規一日團，確認是否包含景區交通、門票與返回解放碑的時間；天候不佳可改市區備案。</p><a href="https://cq.gov.cn/ywdt/zwhd/qxdt/202603/t20260304_15489024.html" target="_blank" rel="noreferrer">武隆官方介紹 <i data-lucide="external-link"></i></a></article>
+        <article class="booking-card"><div><span>可預約 · 9/15</span><i data-lucide="tram-front"></i></div><h3>長江索道</h3><strong>上午或傍晚時段</strong><p>景區保留預約管理；選定時段後，和龍門浩、小浩里排在同一段，避免重複過江。</p><a href="https://www.cq.gov.cn/zjcq/cycq/jplyxl/dsy/dsjp/202409/t20240905_13599684.html" target="_blank" rel="noreferrer">官方資訊 <i data-lucide="external-link"></i></a></article>
+      </div>
+    </section>
+
+    <section class="prepare-section" id="prepare">
+      <div class="prepare-copy"><p class="eyebrow">行李與證件</p><h2>出發前確認清單</h2><p>票券集中在同一格；勾選結果會保留在這支手機。獨旅以證件、返程與住宿確認為第一順位。</p><a href="https://www.12306.cn/" target="_blank" rel="noreferrer">前往 12306 <i data-lucide="external-link"></i></a></div>
+      <div class="checklist" id="checklist">
+        <details class="ticket-checklist-panel">
+          <summary><span class="ticket-summary-icon"><i data-lucide="tickets"></i></span><div><strong>購票日期總表</strong><small>共 5 項・附建議處理順序・點開逐項勾選</small></div><i data-lucide="chevron-down" class="ticket-summary-arrow"></i></summary>
+          <div class="ticket-checklist-body">
+            <label><input type="checkbox" data-check="flight"><span></span><div><div class="ticket-date"><b>最優先</b><em>使用 9/16</em></div><strong>CI594 重慶 → 高雄</strong><small>確認 20:05 起飛、托運額度、姓名拼音與台胞證／護照資料。</small></div></label>
+            <label><input type="checkbox" data-check="hotel"><span></span><div><div class="ticket-date"><b>機票後立刻訂</b><em>入住 9/11–9/16</em></div><strong>解放碑住宿五晚</strong><small>選可免費取消、能以台胞證登記且靠近地鐵的飯店。</small></div></label>
+            <label><input type="checkbox" data-check="train"><span></span><div><div class="ticket-date"><b>8/28 開售</b><em>使用 9/11</em></div><strong>成都 → 重慶高鐵</strong><small>確認爸媽出發機場後再選上車站；至少保留 60 分鐘換乘緩衝。</small></div></label>
+            <label><input type="checkbox" data-check="wulong"><span></span><div><div class="ticket-date"><b>建議出發前一週</b><em>使用 9/14</em></div><strong>武隆正規一日團</strong><small>核對集合點、景區交通、包含門票、午餐與返回時間。</small></div></label>
+            <label><input type="checkbox" data-check="cableway"><span></span><div><div class="ticket-date future"><b>開放後再訂</b><em>使用 9/15</em></div><strong>長江索道</strong><small>預約時段和龍門浩、小浩里排在一起，避免多次過江。</small></div></label>
+            <nav class="ticket-links" aria-label="官方購票入口"><span>官方入口</span><a href="https://www.china-airlines.com/tw/zh" target="_blank" rel="noreferrer">華航</a><a href="https://www.12306.cn/" target="_blank" rel="noreferrer">12306</a><a href="https://cq.gov.cn/ywdt/zwhd/qxdt/202603/t20260304_15489024.html" target="_blank" rel="noreferrer">武隆</a><a href="https://www.cq.gov.cn/zjcq/cycq/jplyxl/dsy/dsjp/202409/t20240905_13599684.html" target="_blank" rel="noreferrer">長江索道</a></nav>
+          </div>
+        </details>
+        <label><input type="checkbox" data-check="walking"><span></span><div><strong>防滑鞋、雨具與補水</strong><small>重慶階梯多、坡度大；準備防滑運動鞋、摺疊傘與可重複裝水的瓶子</small></div></label>
+        <label><input type="checkbox" data-check="payments"><span></span><div><strong>支付與地圖</strong><small>確認支付寶／微信支付可用，下載高德地圖並保存住宿地址</small></div></label>
+        <label><input type="checkbox" data-check="documents"><span></span><div><strong>證件與返程文件</strong><small>台胞證、護照、CI594 訂位與保險資料放在隨身包，不要托運</small></div></label>
+      </div>
+    </section>
+
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">渝</span><span>重慶六日行程</span></a><p>2026/09/11—09/16 · 成都・重慶・高雄</p><button type="button" class="back-top" aria-label="回到頁首" data-tooltip="回到頁首"><i data-lucide="arrow-up"></i></button></footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="trip-drawer" id="tripDrawer" aria-label="我的重慶收藏" aria-hidden="true">
+    <div class="drawer-head"><div><span>旅行地點</span><h2>我的收藏</h2></div><button type="button" id="closeDrawer" aria-label="關閉收藏"><i data-lucide="x"></i></button></div>
+    <div class="drawer-summary"><span>2026/09/11</span><strong>6 天 5 夜</strong></div>
+    <div id="drawerSaved" class="drawer-saved"></div><div id="drawerEmpty" class="drawer-empty"><i data-lucide="heart"></i><strong>還沒有收藏地點</strong><p>在互動地圖按下愛心，地點就會集中在這裡。</p></div>
+    <div class="drawer-actions"><button type="button" id="copyPlan"><i data-lucide="copy"></i> 複製旅行摘要</button><button type="button" id="clearSaved"><i data-lucide="trash-2"></i> 清空收藏</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <nav class="mobile-nav" aria-label="手機導覽">
+    <a href="#route"><i data-lucide="calendar-days"></i><span>行程</span></a>
+    <a href="#guide"><i data-lucide="landmark"></i><span>介紹</span></a>
+    <a href="#map"><i data-lucide="map"></i><span>地圖</span></a>
+    <a href="#prepare"><i data-lucide="list-checks"></i><span>清單</span></a>
+  </nav>
+  <script src="assets/vendor/lucide.min.js?v=1"></script>
+  <script src="assets/vendor/leaflet/leaflet.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
