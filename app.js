@@ -12,11 +12,11 @@ const itineraries = [
     ["17:30","朝天門・來福士","看兩江交會與城市天際線，晚餐後沿江前往洪崖洞。","朝天門・來福士"],
     ["19:30","洪崖洞・千廝門大橋","以外部夜景為主；洪崖洞免費，不找收費帶路或快速通道。","洪崖洞・千廝門大橋"]
   ]},
-  { date:"9/13", weekday:"日", title:"博物館・輕軌穿樓", city:"渝中＋江北", lodging:"重慶", tone:"city", note:"上午先進三峽博物館，午後搭 2 號線到李子壩，再到鵝嶺，晚上轉往觀音橋吃飯。", items:[
+  { date:"9/13", weekday:"日", title:"博物館・輕軌穿樓", city:"渝中區", lodging:"重慶", tone:"city", note:"上午先進三峽博物館，午後搭 2 號線到李子壩，再到鵝嶺。晚上就近吃飯，為隔天武隆保留體力。", items:[
     ["09:00","三峽博物館・人民大禮堂","博物館週日開放、週一休館，今天安排最穩；帶台胞證走人工查驗。","三峽博物館・人民大禮堂"],
     ["13:00","李子壩站看輕軌穿樓","先在觀景平台看列車，再搭 2 號線親自穿樓；避開馬路邊停留拍照。","李子壩站"],
     ["15:00","鵝嶺二廠・鵝嶺公園","兩處都在高處，依體力二選一；想看城市視野選公園，想逛文創選二廠。","鵝嶺二廠"],
-    ["18:00","觀音橋步行街","晚餐與逛街集中在這裡，吃完搭地鐵回解放碑。","觀音橋步行街"]
+    ["18:00","回解放碑、早點吃晚餐","不再跨區去觀音橋；補水、整理武隆隨身包並提早休息。","解放碑住宿區"]
   ]},
   { date:"9/14", weekday:"一", title:"武隆喀斯特一日", city:"武隆", lodging:"重慶", tone:"hard", note:"週一安排郊區，避開博物館休館。正規一日團往返最省轉乘，主看天生三橋與龍水峽地縫。", items:[
     ["07:00 前","解放碑附近集合","早餐與水先準備好；確認車牌、導遊電話、包含門票與返回時間。","解放碑住宿區"],
@@ -24,17 +24,29 @@ const itineraries = [
     ["下午","龍水峽地縫","石階濕滑，穿防滑鞋；下雨或體力不足時可刪除這段，提早返回。","龍水峽地縫"],
     ["20:00 左右","返回解放碑","今天不再安排夜景；回飯店洗澡、補水並整理隔天索道預約。","解放碑住宿區"]
   ]},
-  { date:"9/15", weekday:"二", title:"磁器口・長江索道", city:"沙坪壩＋南岸", lodging:"重慶", tone:"flex", note:"上午去磁器口，午後回市中心搭長江索道，再走龍門浩、小浩里與南濱路夜景。", items:[
-    ["09:00","磁器口古鎮","早到避開團客，只走主街與一兩條支巷；中午前離開。","磁器口古鎮"],
-    ["14:30","長江索道","依實際預約時段前往；把過江方向和後續龍門浩排在一起，不重複往返。","長江索道"],
+  { date:"9/15", weekday:"二", title:"睡飽・觀音橋慢遊", city:"江北區", lodging:"重慶", tone:"flex", note:"武隆隔天刻意留白。睡到自然醒、洗衣與整理照片，下午有精神再去北倉與觀音橋；不設必到景點。", items:[
+    ["上午","自然醒・洗衣・慢早餐","不設鬧鐘。先處理衣物、補眠與腳部疲勞；若仍累，今天整天留在飯店附近也完全可以。","解放碑住宿區"],
+    ["14:00","北倉文創街區","有精神再出門，找咖啡店坐一段；下雨時可直接改到商場。","北倉文創街區"],
+    ["17:00","觀音橋步行街","逛街、補給與晚餐集中處理；想吃火鍋可選今天，之後不用趕場。","觀音橋步行街"],
+    ["20:00","提早回飯店","晚上不排夜景，把狀態養回來；依天氣預約後兩天的長江索道。","解放碑住宿區"]
+  ]},
+  { date:"9/16", weekday:"三", title:"磁器口・沙坪壩慢遊", city:"沙坪壩區", lodging:"重慶", tone:"city", note:"磁器口獨立成一天，不再和索道、南岸夜景綁在一起。早點抵達，下午在沙坪壩休息，晚上自由安排。", items:[
+    ["09:00","前往磁器口古鎮","早到避開團客，從支巷慢慢走進主街，不需要把每個入口都走完。","磁器口古鎮"],
+    ["11:30","支巷散步・午餐","找離主街稍遠的店休息；不買大量易碎伴手禮，減少回程行李負擔。","磁器口古鎮"],
+    ["14:30","沙坪壩商圈喝咖啡","避開午後最熱時段，坐下整理照片；若已逛夠可直接回飯店。","沙坪壩商圈"],
+    ["18:30","自由晚餐","今晚沒有指定景點，可回解放碑、重訪喜歡的小店或早點休息。","解放碑住宿區"]
+  ]},
+  { date:"9/17", weekday:"四", title:"索道・南岸夜景", city:"渝中＋南岸", lodging:"重慶", tone:"city", note:"上午在解放碑附近慢走，午後依預約搭長江索道過江，再一路走龍門浩、小浩里與南濱路。", items:[
+    ["10:00","魁星樓・戴家巷","從解放碑步行前往，看看樓頂廣場與立體道路；不趕時間，拍完回市區吃午餐。","魁星樓・戴家巷"],
+    ["14:30","長江索道","依官方預約時段前往；若排隊過久，直接搭地鐵到上新街，不影響後續行程。","長江索道"],
     ["16:00","龍門浩老街・小浩里","沿山勢慢慢往下走，找室內咖啡店休息，等待天色轉暗。","龍門浩・小浩里"],
     ["19:00","南濱路夜景","從南岸看渝中半島，晚餐後叫車或搭地鐵回飯店。","南濱路"]
   ]},
-  { date:"9/16", weekday:"三", title:"山城收尾・直飛高雄", city:"重慶", lodging:"—", tone:"flight", note:"CI594 表定 20:05 從 CKG T3 起飛、22:55 抵達高雄。下午 16:30 前離開市區，不再排遠程景點。", items:[
-    ["10:00","魁星樓・戴家巷","最後半天只走解放碑附近，以立體城市視角與伴手禮收尾。","魁星樓・戴家巷"],
-    ["12:00","退房、寄放行李","午餐後取行李，確認台胞證、護照、華航訂位與行動電源位置。","解放碑住宿區"],
-    ["16:30","前往重慶江北機場 T3","目標 17:15 前抵達，保留跨境航班報到、安檢與邊檢時間。","重慶江北機場 CKG"],
-    ["20:05–22:55","CI594 重慶 → 高雄","目前週三直飛；出發前一天再次核對航班狀態與航廈。","重慶江北機場 CKG"]
+  { date:"9/18", weekday:"五", title:"彈性返程・也可續住", city:"重慶", lodging:"依機票", tone:"flight", note:"回程尚未訂，不綁特定航班。先比較 9/18 前後的直飛與轉機選項；若票價或時間不理想，就把今天當續住彈性日。", items:[
+    ["09:30","最後一頓重慶早餐","在解放碑附近吃小麵或抄手，順便補買少量伴手禮。","解放碑住宿區"],
+    ["12:00","退房或辦理續住","若今天離開就寄放行李；若航班不理想，延住一晚也不破壞整體行程。","解放碑住宿區"],
+    ["依航班倒推","前往重慶江北機場","跨境航班以起飛前約 3 小時抵達為目標，另留市區到機場交通緩衝。","重慶江北機場 CKG"],
+    ["彈性","重慶 → 高雄／轉機返台","訂票後再填入確切航班與航廈；出發前一天重新核對行李、證件與航班狀態。","重慶江北機場 CKG"]
   ]}
 ];
 
@@ -42,7 +54,7 @@ const dayGuides = [
   {effort:"移動為主",summary:"爸媽安檢口 → 成都上車站 → 重慶 → 解放碑飯店。今天的重點是把機場、高鐵與住宿三個節點接好。",facts:[
     ["badge-alert","先確認機場","NX387 的電子票要核對 TFU／CTU 與航廈；不同機場會直接改變高鐵上車站。"],
     ["train-front","高鐵購票","9/11 車票預計 8/28 開售。以少轉乘、抵達重慶不晚於 21:00 為優先。"],
-    ["bed-double","住宿區域","五晚固定住解放碑、臨江門或小什字一帶；確認飯店可用台胞證辦理入住。"],
+    ["bed-double","住宿區域","七晚固定住解放碑、臨江門或小什字一帶；確認飯店可用台胞證辦理入住。"],
     ["utensils","第一晚","只在八一路或飯店附近吃飯，洪崖洞留到隔天，不拖著行李跑夜景。"]
   ],spot:["成渝移動日","這一天不需要追景點。把爸媽送進安檢、順利搭上高鐵、在解放碑完成入住，就是完整達標。"]},
   {effort:"中高・階梯多",summary:"十八梯 → 山城巷 → 白象居／湖廣會館 → 朝天門 → 洪崖洞。全程都在渝中半島。",facts:[
@@ -51,11 +63,11 @@ const dayGuides = [
     ["camera","夜景位置","洪崖洞以嘉濱路與千廝門大橋外部視角最好，不必在內部逐層排隊。"],
     ["badge-alert","防詐提醒","洪崖洞免費，不買快速通道、不找收費帶路、不跟路邊制服人員買遊船票。"]
   ],spot:["渝中老城看什麼","最精彩的是高低落差：街道跨過屋頂、住宅貼著山坡、老街忽然接上摩天樓。把路線走順，比塞更多打卡點重要。"]},
-  {effort:"中等",summary:"三峽博物館 → 李子壩 → 鵝嶺 → 觀音橋。文化、軌道與商圈各留一段。",facts:[
+  {effort:"中等",summary:"三峽博物館 → 李子壩 → 鵝嶺 → 解放碑。文化與軌道各留一段，晚間提早休息。",facts:[
     ["landmark","博物館時間","三峽博物館週二至週日 09:00–17:00，週一休館；今天上午進場最穩。"],
     ["train-front","李子壩拍法","先到觀景平台看穿樓，再從李子壩站搭 2 號線離開；不要站在車道邊。"],
     ["route","二廠或公園","鵝嶺二廠偏文創拍照，鵝嶺公園偏城市視野；體力不足只選一個。"],
-    ["utensils","晚餐安排","觀音橋選擇多，獨自吃飯可找小碗菜、小火鍋或串串，不必點完整九宮格。"]
+    ["bed-double","晚間安排","武隆隔天需要早起，18:00 後回解放碑吃飯，不再跨區追景點。"]
   ],spot:["李子壩輕軌穿樓","2 號線列車穿過住宅建築是重慶最有代表性的立體交通畫面。看完後搭同一條線離開，路線最自然。"]},
   {effort:"最高・全天往返",summary:"解放碑集合 → 武隆天生三橋 → 龍水峽地縫 → 解放碑。把交通交給正規一日團。",facts:[
     ["bus-front","選團條件","確認集合點、是否包含景區交通與門票、是否進購物站，以及最晚返城時間。"],
@@ -63,18 +75,30 @@ const dayGuides = [
     ["cloud-rain","濕滑提醒","地縫與峽谷容易潮濕，防滑鞋比漂亮鞋重要；手機準備防水袋。"],
     ["bed-double","晚間留白","回城時間受車況影響，晚上不預約索道、遊船或餐廳。"]
   ],spot:["武隆天生三橋","三座巨型天然石橋落在深切峽谷中，是武隆喀斯特最經典的景觀。規模要人在谷底行走時才真正感受得到。"]},
-  {effort:"中高・可彈性",summary:"磁器口 → 長江索道 → 龍門浩／小浩里 → 南濱路。用索道完成一次過江。",facts:[
-    ["clock-3","磁器口早到","09:00 左右抵達，主街開始擁擠前離開；不必把所有支巷走完。"],
-    ["tram-front","索道預約","以官方實際時段為準。若排隊過久，索道可以取消，直接搭地鐵到上新街。"],
+  {effort:"最低・刻意留白",summary:"自然醒 → 洗衣／整理 → 北倉 → 觀音橋。下午行程全部可以取消。",facts:[
+    ["bed-double","不設鬧鐘","武隆隔天先補眠，腿痠就留在飯店；休息本身就是今天的正式行程。"],
+    ["shirt","處理衣物","趁七晚旅程中段洗衣、整理行李與照片，避免最後一天才集中處理。"],
+    ["coffee","北倉慢坐","北倉適合找咖啡店休息，不追打卡點；下雨直接改逛室內商場。"],
+    ["utensils","觀音橋晚餐","有精神再去觀音橋，獨自吃飯可選小碗菜、小火鍋或串串。"]
+  ],spot:["旅行中的空白日","把休息排進行程，後面兩天反而會更有精神。今天沒有未完成清單，臨時想改行程也完全沒問題。"]},
+  {effort:"輕鬆・單區慢走",summary:"磁器口 → 沙坪壩午休 → 自由晚餐。今天只處理一個主要景區。",facts:[
+    ["clock-3","磁器口早到","09:00 左右抵達，主街開始擁擠前先走支巷；中午後就準備離開。"],
+    ["store","購物節制","伴手禮先少量購買，留意包裝重量與保存方式，不讓行李影響後兩天。"],
+    ["coffee","午後休息","沙坪壩找有冷氣的店坐下，若已疲累就直接回飯店。"],
+    ["moon-star","晚上自由","今晚不綁夜景，可重訪喜歡的餐廳，也可提早回房休息。"]
+  ],spot:["磁器口慢慢逛","磁器口不需要和南岸景點塞在同一天。早到、走支巷、坐下吃午餐，會比快速穿過主街舒服很多。"]},
+  {effort:"中等・傍晚最精彩",summary:"魁星樓／戴家巷 → 長江索道 → 龍門浩／小浩里 → 南濱路。用索道完成一次過江。",facts:[
+    ["camera","上午近距離","魁星樓和戴家巷都在解放碑旁，上午慢慢走，不為索道預約提前消耗體力。"],
+    ["tram-front","索道預約","以官方實際時段為準。若排隊過久，直接搭地鐵到上新街。"],
     ["footprints","南岸走法","龍門浩與小浩里依山而建，慢慢往下走；天黑後轉往視野開闊的南濱路。"],
-    ["moon-star","最後夜景","今晚是完整夜景收尾，回飯店後就開始整理行李，不再轉場。"]
+    ["moon-star","最後夜景","今晚才是完整夜景收尾，回飯店後整理行李，不再轉場。"]
   ],spot:["長江索道與南岸","索道本身時間不長，價值在於把渝中與南岸串起來。下車後接龍門浩、小浩里和南濱路，才是一段完整體驗。"]},
-  {effort:"輕鬆但時間重要",summary:"魁星樓／戴家巷 → 退房 → CKG T3 → CI594 → 高雄。16:30 是離開市區的底線。",facts:[
-    ["badge-check","文件放同一包","台胞證、護照、華航訂位資料與保險文件放隨身包，不要托運。"],
-    ["plane","機場時間","CI594 表定 20:05 起飛；17:15 前抵達 T3，保留報到、安檢與邊檢時間。"],
-    ["luggage","行李確認","行動電源放隨身行李，掛行李後拍下行李條；出發前一天再次查航班狀態。"],
-    ["route","市區收尾","上午只在解放碑步行範圍活動，不去磁器口、武隆或其他遠程景點。"]
-  ],spot:["重慶直飛高雄","週三直飛讓五晚行程完整收尾。這天不用轉機，但班次少，因此機票與準時抵達機場是最高優先。"]}
+  {effort:"輕鬆・時間依機票",summary:"早餐 → 退房或續住 → CKG → 高雄／轉機返台。回程尚未鎖定。",facts:[
+    ["badge-check","文件放同一包","台胞證、護照、訂位資料與保險文件放隨身包，不要托運。"],
+    ["calendar-days","日期可前後移","先比較 9/18 前後票價與轉機時間；沒有合適班次就續住，不勉強買差的行程。"],
+    ["plane","機場緩衝","確定航班後，以跨境航班起飛前約 3 小時抵達機場為原則，再倒推離開市區時間。"],
+    ["luggage","行李確認","行動電源放隨身行李，掛行李後拍下行李條；前一天再次查航班與航廈。"]
+  ],spot:["彈性返程日","這趟旅行不用被尚未確定的回程綁住。先把市區行程玩完整，再以票價、轉機時間與體力選擇離開日期。"]}
 ];
 
 const dayVisuals = [
@@ -83,16 +107,20 @@ const dayVisuals = [
   {src:"assets/attractions/liziba.jpg",alt:"重慶軌道交通列車穿過李子壩住宅建築",caption:"李子壩輕軌穿樓",highlights:["三峽博物館","李子壩","鵝嶺"],credit:"Chen Hualin／Wikimedia Commons · CC BY-SA 4.0",source:"https://commons.wikimedia.org/wiki/File:A_train_of_Chongqing_Rail_Transit_Line_2_coming_through_a_residential_building_at_Liziba.jpg"},
   {src:"assets/attractions/wulong.jpg",alt:"武隆天生三橋的巨型喀斯特峽谷與天然石橋",caption:"武隆天生三橋",highlights:["天龍橋","青龍橋","黑龍橋"],credit:"RoyalCathayan／Wikimedia Commons · CC BY-SA 4.0",source:"https://commons.wikimedia.org/wiki/File:Three_Natural_Bridges.jpg"},
   null,
+  null,
+  null,
   null
 ];
 
 const dayFallbacks=[
   "如果機場或高鐵班次不順，今晚只求安全抵達重慶；解放碑散步與晚餐都可以取消。",
   "若下雨或雙腿太累，刪山城巷與白象居，保留十八梯、朝天門和洪崖洞三段。",
-  "若博物館臨時調整，改到李子壩、鵝嶺與觀音橋；若戶外太熱，就延長博物館停留並刪鵝嶺。",
+  "若博物館臨時調整，改走李子壩與鵝嶺；若戶外太熱，就延長室內停留並刪鵝嶺。",
   "若武隆遇大雨、道路預警或成團問題，留在市區改走磁器口、三峽博物館與南濱路。",
+  "今天本來就是休息日；天氣差或仍疲累時取消北倉與觀音橋，留在飯店附近即可。",
+  "若磁器口過度擁擠或天氣太熱，提早到沙坪壩商圈休息，不另外補景點。",
   "若索道排隊或停運，直接搭地鐵到上新街，龍門浩、小浩里與南濱路照常。",
-  "航班日沒有遠程備案；上午若下雨就留在商場或咖啡店，16:30 仍準時離開市區。"
+  "若今天沒有合適回程，續住一晚；若已訂早班機，刪除早餐與採買，依航班時間直接前往機場。"
 ];
 
 const mapPlaces = [
@@ -100,7 +128,7 @@ const mapPlaces = [
   {name:"成都雙流機場 CTU",area:"成都・雙流",desc:"NX387 的另一個可能出發機場；確認後再選高鐵上車站。",lat:30.5785,lng:103.9471,type:"transport",days:[0],stay:"備選機場",icon:"plane"},
   {name:"成都東站",area:"成都・成華區",desc:"成都前往重慶班次密集的主要車站；從機場抵達時間要另留緩衝。",lat:30.6289,lng:104.1403,type:"transport",days:[0],stay:"9/11 高鐵備選",icon:"train-front"},
   {name:"重慶北站",area:"重慶・渝北區",desc:"抵達重慶後前往解放碑；帶大件行李時可直接叫車。",lat:29.6083,lng:106.5508,type:"transport",days:[0],stay:"抵達重慶",icon:"train-front"},
-  {name:"解放碑住宿區",area:"渝中區・解放碑／小什字",desc:"9/11 至 9/16 連住五晚；地鐵、餐飲與夜間步行都方便。",lat:29.5571,lng:106.5770,type:"stay",days:[0,1,2,3,4,5],stay:"重慶共 5 晚",icon:"bed-double"},
+  {name:"解放碑住宿區",area:"渝中區・解放碑／小什字",desc:"9/11 至 9/18 連住七晚；地鐵、餐飲與夜間步行都方便。",lat:29.5571,lng:106.5770,type:"stay",days:[0,1,2,3,4,5,6,7],stay:"重慶共 7 晚",icon:"bed-double"},
   {name:"十八梯",area:"渝中區",desc:"老城坡地街巷第一站，由上往下走較省力。",lat:29.5516,lng:106.5735,type:"sight",days:[1],stay:"9/12 上午",icon:"footprints"},
   {name:"山城巷",area:"渝中區",desc:"沿坡地展開的山城步道，中午前後注意補水與遮陽。",lat:29.5530,lng:106.5648,type:"sight",days:[1],stay:"9/12 中午",icon:"route"},
   {name:"白象居・湖廣會館",area:"渝中區・下半城",desc:"白象居看立體城市視角，湖廣會館依體力決定是否入內。",lat:29.5562,lng:106.5855,type:"sight",days:[1],stay:"9/12 下午",icon:"landmark"},
@@ -109,15 +137,17 @@ const mapPlaces = [
   {name:"三峽博物館・人民大禮堂",area:"渝中區・人民路",desc:"博物館週一休館，安排在週日；帶有效證件入館。",lat:29.5621,lng:106.5506,type:"sight",days:[2],stay:"9/13 上午",icon:"landmark"},
   {name:"李子壩站",area:"渝中區・軌道 2 號線",desc:"從觀景平台看列車穿樓，再親自搭 2 號線離開。",lat:29.5555,lng:106.5338,type:"sight",days:[2],stay:"9/13 午後",icon:"train-front"},
   {name:"鵝嶺二廠",area:"渝中區・鵝嶺",desc:"文創園區與山城高處視野；體力不足可改鵝嶺公園或直接刪除。",lat:29.5532,lng:106.5166,type:"sight",days:[2],stay:"9/13 下午",icon:"camera"},
-  {name:"觀音橋步行街",area:"江北區",desc:"晚餐、逛街與補給集中處理，吃完搭地鐵回飯店。",lat:29.5784,lng:106.5336,type:"sight",days:[2],stay:"9/13 晚間",icon:"utensils"},
+  {name:"北倉文創街區",area:"江北區・觀音橋旁",desc:"休息日午後的可選行程，找咖啡店慢坐，不追打卡點。",lat:29.5808,lng:106.5297,type:"sight",days:[4],stay:"9/15 可選",icon:"coffee"},
+  {name:"觀音橋步行街",area:"江北區",desc:"休息日傍晚才前往，逛街、補給與晚餐集中處理。",lat:29.5784,lng:106.5336,type:"sight",days:[4],stay:"9/15 傍晚",icon:"utensils"},
   {name:"武隆天生三橋",area:"武隆區・仙女山鎮",desc:"天龍、青龍、黑龍三座巨型天然石橋的核心步道。",lat:29.4340,lng:107.8000,type:"sight",days:[3],stay:"9/14 主要景點",icon:"mountain"},
   {name:"龍水峽地縫",area:"武隆區",desc:"峽谷、瀑布與濕滑石階；雨勢大或疲累時可刪除。",lat:29.4215,lng:107.8240,type:"sight",days:[3],stay:"9/14 下午",icon:"cloud-rain"},
-  {name:"磁器口古鎮",area:"沙坪壩區",desc:"早上先逛，團客大量抵達前離開；不必走完所有支巷。",lat:29.5793,lng:106.4484,type:"sight",days:[4],stay:"9/15 上午",icon:"store"},
-  {name:"長江索道",area:"渝中區小什字 ↔ 南岸上新街",desc:"依預約時段搭乘，作為前往南岸的一次交通體驗。",lat:29.5580,lng:106.5832,type:"sight",days:[4],stay:"9/15 下午",icon:"tram-front"},
-  {name:"龍門浩・小浩里",area:"南岸區",desc:"依山而建的老街區，適合傍晚慢走並等候夜色。",lat:29.5557,lng:106.5965,type:"sight",days:[4],stay:"9/15 傍晚",icon:"footprints"},
-  {name:"南濱路",area:"南岸區・長江畔",desc:"從南岸看渝中半島夜景，作為最後完整夜晚的收尾。",lat:29.5450,lng:106.5920,type:"sight",days:[4],stay:"9/15 夜間",icon:"moon-star"},
-  {name:"魁星樓・戴家巷",area:"渝中區・解放碑旁",desc:"返程日上午的近距離收尾，不影響退房與前往機場。",lat:29.5631,lng:106.5739,type:"sight",days:[5],stay:"9/16 上午",icon:"camera"},
-  {name:"重慶江北機場 CKG",area:"渝北區・T3",desc:"CI594 表定 20:05 起飛；建議 17:15 前抵達。",lat:29.7192,lng:106.6417,type:"transport",days:[5],stay:"9/16 返程",icon:"plane"}
+  {name:"磁器口古鎮",area:"沙坪壩區",desc:"獨立成一天，早上先逛，團客大量抵達前先走支巷。",lat:29.5793,lng:106.4484,type:"sight",days:[5],stay:"9/16 上午",icon:"store"},
+  {name:"沙坪壩商圈",area:"沙坪壩區・三峽廣場",desc:"磁器口之後的室內休息與用餐地點，疲累時可直接略過。",lat:29.5562,lng:106.4573,type:"sight",days:[5],stay:"9/16 下午",icon:"coffee"},
+  {name:"長江索道",area:"渝中區小什字 ↔ 南岸上新街",desc:"依預約時段搭乘，作為前往南岸的一次交通體驗。",lat:29.5580,lng:106.5832,type:"sight",days:[6],stay:"9/17 下午",icon:"tram-front"},
+  {name:"龍門浩・小浩里",area:"南岸區",desc:"依山而建的老街區，適合傍晚慢走並等候夜色。",lat:29.5557,lng:106.5965,type:"sight",days:[6],stay:"9/17 傍晚",icon:"footprints"},
+  {name:"南濱路",area:"南岸區・長江畔",desc:"從南岸看渝中半島夜景，作為最後完整夜晚的收尾。",lat:29.5450,lng:106.5920,type:"sight",days:[6],stay:"9/17 夜間",icon:"moon-star"},
+  {name:"魁星樓・戴家巷",area:"渝中區・解放碑旁",desc:"最後完整市區日上午的近距離行程，步行即可抵達。",lat:29.5631,lng:106.5739,type:"sight",days:[6],stay:"9/17 上午",icon:"camera"},
+  {name:"重慶江北機場 CKG",area:"渝北區",desc:"回程尚未訂；確認航班後，以起飛前約 3 小時抵達為原則。",lat:29.7192,lng:106.6417,type:"transport",days:[7],stay:"9/18 或依機票調整",icon:"plane"}
 ];
 
 const readStoredValue=(key,fallback)=>{try{return localStorage.getItem(key)??fallback;}catch{return fallback;}};
@@ -140,7 +170,7 @@ function showToast(message){toast.textContent=message;toast.classList.add("show"
 function renderDays(){
   dayTabs.innerHTML=itineraries.map((d,i)=>`<button class="day-tab ${i===activeDay?"active":""}" role="tab" aria-selected="${i===activeDay}" data-day="${i}"><span>DAY ${i+1} · ${d.date}</span><strong>${d.title}</strong></button>`).join("");
   qs("#mobileDaySelect").innerHTML=itineraries.map((d,i)=>`<option value="${i}" ${i===activeDay?"selected":""}>D${i+1}｜${d.date}｜${d.title}</option>`).join("");
-  qs("#mapDaySelect").innerHTML=`<option value="all">全部 6 天</option>${itineraries.map((d,i)=>`<option value="${i}">D${i+1}｜${d.date}｜${d.title}</option>`).join("")}`;
+  qs("#mapDaySelect").innerHTML=`<option value="all">全部 8 天</option>${itineraries.map((d,i)=>`<option value="${i}">D${i+1}｜${d.date}｜${d.title}</option>`).join("")}`;
   qs("#mapDaySelect").value=mapDay;
   qsa("[data-map-day]").forEach(b=>b.classList.toggle("active",b.dataset.mapDay===mapDay));
   qsa(".overview-day").forEach(card=>card.classList.toggle("active",Number(card.dataset.overviewDay)===activeDay));
@@ -183,7 +213,7 @@ function visiblePlaces(){const q=mapQuery.trim().toLocaleLowerCase("zh-Hant");re
 function renderMapContext(){
   const box=qs("#mapContext");
   if(mapDay==="all"){
-    box.innerHTML=`<div class="map-context-title"><span>${icon("map")} 6 天全覽</span><strong>成都到重慶主要地點</strong><small>先選日期查看當天順序，或依顏色辨認景點、交通與住宿。</small></div><div class="map-context-hint">${icon("mouse-pointer-click")} 點地圖標記或右側清單查看說明</div>`;
+    box.innerHTML=`<div class="map-context-title"><span>${icon("map")} 8 天全覽</span><strong>成都到重慶主要地點</strong><small>先選日期查看當天順序，或依顏色辨認景點、交通與住宿。</small></div><div class="map-context-hint">${icon("mouse-pointer-click")} 點地圖標記或右側清單查看說明</div>`;
   }else{
     const dayNumber=Number(mapDay),d=itineraries[dayNumber],route=routePlacesForDay(dayNumber),sightCount=route.filter(p=>p.type==="sight").length;
     box.innerHTML=`<div class="map-context-title"><span>D${dayNumber+1} · ${d.date} 星期${d.weekday} · ${dayTypeLabels[d.tone]}</span><strong>${d.title}</strong><small>${route.length} 個主要停靠點 · ${sightCount} 個主要景點 · 今晚住 ${d.lodging}</small></div><div class="map-route-chain">${route.map((p,i)=>`<button type="button" data-map-context-place="${p.name}"><b>${i+1}</b><span>${p.name}</span></button>${i<route.length-1?icon("chevron-right"):""}`).join("")}</div>`;
@@ -253,7 +283,7 @@ qs("#clearMapSearch").addEventListener("click",()=>{qs("#mapSearch").value="";ma
 qs(".saved-button").addEventListener("click",openDrawer);qs("#closeDrawer").addEventListener("click",closeDrawer);qs("#drawerBackdrop").addEventListener("click",closeDrawer);document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDrawer();});
 qs("#drawerSaved").addEventListener("click",e=>{const b=e.target.closest("[data-drawer-remove]");if(b)toggleSaved(b.dataset.drawerRemove);});
 qs("#clearSaved").addEventListener("click",()=>{if(!saved.size)return showToast("收藏目前是空的");saved.clear();writeStoredValue("chongqing-saved","[]");qs("#savedCount").textContent="0";renderMapData(false);renderDrawer();showToast("已清空收藏");});
-qs("#copyPlan").addEventListener("click",async()=>{const list=saved.size?[...saved].map(n=>`・${n}`).join("\n"):"・尚未收藏地點";const text=`重慶六日行程｜成都・重慶・高雄｜2026/09/11–09/16\n\n收藏地點\n${list}`;try{await navigator.clipboard.writeText(text);showToast("旅行摘要已複製");}catch{showToast("瀏覽器未允許複製");}});
+qs("#copyPlan").addEventListener("click",async()=>{const list=saved.size?[...saved].map(n=>`・${n}`).join("\n"):"・尚未收藏地點";const text=`重慶八日行程｜成都・重慶・返台彈性｜2026/09/11–09/18\n\n收藏地點\n${list}`;try{await navigator.clipboard.writeText(text);showToast("旅行摘要已複製");}catch{showToast("瀏覽器未允許複製");}});
 qs("#copyDayGuide").addEventListener("click",async()=>{
   const day=itineraries[activeDay],guide=dayGuides[activeDay];
   const steps=day.items.map((item,i)=>`${i+1}. ${item[0]}｜${item[1]}\n${item[2]}`).join("\n\n");
@@ -267,9 +297,9 @@ qs("#parentMode").addEventListener("click",()=>{const on=!document.body.classLis
 function updateReadiness(){const checks=qsa("[data-check]"),done=checks.filter(i=>i.checked).length,total=checks.length,pct=total?Math.round(done/total*100):0;qs("#readinessPercent").textContent=`${pct}%`;qs("#readinessText").textContent=`${done}／${total} 已完成`;qs("#readinessRing").style.setProperty("--progress",`${pct*3.6}deg`);}
 const savedCheckState=readStoredJSON("chongqing-checklist",{}),checkState=savedCheckState&&typeof savedCheckState==="object"&&!Array.isArray(savedCheckState)?savedCheckState:{};qsa("[data-check]").forEach(i=>{i.checked=!!checkState[i.dataset.check];i.addEventListener("change",()=>{checkState[i.dataset.check]=i.checked;writeStoredValue("chongqing-checklist",JSON.stringify(checkState));updateReadiness();});});
 
-qs("#shareTrip").addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"重慶六日行程｜山城獨旅",text:"2026/09/11—09/16 成都到重慶六日完整行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
+qs("#shareTrip").addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"重慶八日行程｜山城慢旅",text:"2026/09/11—09/18 成都到重慶八日慢旅行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip").addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=1").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=2").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("chongqing-parent-mode","false")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();initMap();
