@@ -36,11 +36,11 @@ const itineraries = [
     ["16:30","北倉文創街區","有精神再出門，找咖啡店坐一段；下雨可直接改到商場。","北倉文創街區"],
     ["18:30","觀音橋步行街","最後晚餐與補給集中處理，21:00 前回飯店完成打包。","觀音橋步行街"]
   ]},
-  { date:"9/17", weekday:"四", title:"澳門轉機・回高雄", city:"返程", lodging:"—", tone:"flight", note:"目前預計澳門航空：16:10 從 CKG T3 出發，澳門轉機 2 小時 55 分，23:00 抵達 KHH。截圖票價 TWD 8,810、托運 32 公斤，訂票前仍要重新確認。", items:[
+  { date:"9/17", weekday:"四", title:"澳門轉機・回高雄", city:"返程", lodging:"—", tone:"flight", note:"回程已出票：NX181 於 16:10 從 CKG T3 出發、18:40 抵達澳門；轉機 2 小時 55 分後搭 NX658，23:00 抵達 KHH 第一航廈。", items:[
     ["09:00","早餐、完成打包","只在解放碑附近活動；證件、行動電源與轉機資料放隨身包。","解放碑住宿區"],
     ["11:30","退房、前往重慶江北機場","建議最晚 12:15–12:30 離開市區，目標約 13:15 抵達 CKG T3。","重慶江北機場 CKG"],
-    ["16:10","澳門航空 CKG T3 → 澳門","目前預計班次；訂票後核對航班號、行李是否直掛與澳門轉機規則。","重慶江北機場 CKG"],
-    ["23:00","抵達高雄 KHH 第一航廈","澳門停留約 2 小時 55 分，總行程約 6 小時 50 分。","高雄國際機場 KHH"]
+    ["16:10–18:40","NX181 重慶 → 澳門","由 CKG T3 起飛；報到時確認 32 公斤托運行李是否直掛高雄，並領取兩段登機證。","重慶江北機場 CKG"],
+    ["21:35–23:00","NX658 澳門 → 高雄","澳門轉機 2 小時 55 分，23:00 抵達 KHH 第一航廈。","高雄國際機場 KHH"]
   ]}
 ];
 
@@ -82,11 +82,11 @@ const dayGuides = [
     ["utensils","最後晚餐","觀音橋集中吃飯與補給，21:00 前回飯店完成打包。"]
   ],spot:["磁器口與觀音橋","上午逛老街、午後休息、傍晚吃飯。若累，北倉與觀音橋都可以取消。"]},
   {effort:"返程日・時間固定",summary:"早餐 → 退房 → CKG T3 → 澳門轉機 → 高雄。12:30 是離開市區的建議底線。",facts:[
-    ["badge-check","目前只是預計","截圖方案為 9/17 澳門航空，16:10 起飛、23:00 抵達；付款前重新確認票價與班次。"],
+    ["badge-check","回程已出票","9/17 搭 NX181、NX658 經澳門回高雄；兩段皆為澳門航空。"],
     ["luggage","托運 32 公斤","畫面標示托運行李 32 公斤；訂票後核對是否全程直掛高雄，以及手提行李限制。"],
     ["plane","澳門轉機","轉機約 2 小時 55 分；確認兩段登機證、航班號與澳門機場轉機動線。"],
     ["route","機場緩衝","目標 13:15 左右抵達 CKG T3，不在上午安排遠程景點。"]
-  ],spot:["澳門航空轉機方案","目前看到的方案總行程約 6 小時 50 分，截圖票價 TWD 8,810。價格與座位仍會變動，以付款頁為準。"]}
+  ],spot:["回程航班已確認","NX181：16:10–18:40，重慶到澳門。NX658：21:35–23:00，澳門到高雄；轉機時間 2 小時 55 分。"]}
 ];
 
 const dayVisuals = [
@@ -131,8 +131,8 @@ const mapPlaces = [
   {name:"長江索道",area:"渝中區小什字 ↔ 南岸上新街",desc:"依預約時段搭乘，作為前往南岸的一次交通體驗。",lat:29.5580,lng:106.5832,type:"sight",days:[4],stay:"9/15 下午",icon:"tram-front"},
   {name:"龍門浩・小浩里",area:"南岸區",desc:"依山而建的老街區，適合傍晚慢走並等候夜色。",lat:29.5557,lng:106.5965,type:"sight",days:[4],stay:"9/15 傍晚",icon:"footprints"},
   {name:"南濱路",area:"南岸區・長江畔",desc:"從南岸看渝中半島夜景，作為最後完整夜景的收尾。",lat:29.5450,lng:106.5920,type:"sight",days:[4],stay:"9/15 夜間",icon:"moon-star"},
-  {name:"重慶江北機場 CKG",area:"渝北區・T3",desc:"目前預計 9/17 搭澳門航空 16:10 出發，建議約 13:15 抵達。",lat:29.7192,lng:106.6417,type:"transport",days:[6],stay:"9/17 返程",icon:"plane"},
-  {name:"高雄國際機場 KHH",area:"高雄・第一航廈",desc:"目前預計經澳門轉機後於 23:00 抵達。",lat:22.5701,lng:120.3500,type:"transport",days:[6],stay:"9/17 23:00",icon:"plane"}
+  {name:"重慶江北機場 CKG",area:"渝北區・T3",desc:"9/17 搭 NX181 於 16:10 出發，建議約 13:15 抵達。",lat:29.7192,lng:106.6417,type:"transport",days:[6],stay:"9/17 返程",icon:"plane"},
+  {name:"高雄國際機場 KHH",area:"高雄・第一航廈",desc:"搭 NX658 經澳門轉機後於 23:00 抵達。",lat:22.5701,lng:120.3500,type:"transport",days:[6],stay:"9/17 23:00",icon:"plane"}
 ];
 
 const readStoredValue=(key,fallback)=>{try{return localStorage.getItem(key)??fallback;}catch{return fallback;}};
@@ -290,13 +290,13 @@ qs("#toggleLargeGuide").addEventListener("click",()=>{qs("#parentGuide").classLi
 function setParentMode(on){document.body.classList.toggle("parent-mode",on);qs("#parentMode").classList.toggle("active",on);qs("#parentMode").setAttribute("aria-pressed",String(on));writeStoredValue("chongqing-parent-mode",String(on));}
 qs("#parentMode").addEventListener("click",()=>{const on=!document.body.classList.contains("parent-mode");setParentMode(on);showToast(on?"已開啟大字閱讀":"已關閉大字閱讀");});
 function updateReadiness(){const checks=qsa("[data-check]"),done=checks.filter(i=>i.checked).length,total=checks.length,pct=total?Math.round(done/total*100):0;const percent=qs("#readinessPercent"),text=qs("#readinessText"),ring=qs("#readinessRing");if(percent)percent.textContent=`${pct}%`;if(text)text.textContent=`${done}／${total} 已完成`;if(ring)ring.style.setProperty("--progress",`${pct*3.6}deg`);}
-const savedCheckState=readStoredJSON("chongqing-checklist",{}),checkState=savedCheckState&&typeof savedCheckState==="object"&&!Array.isArray(savedCheckState)?savedCheckState:{};qsa("[data-check]").forEach(i=>{i.checked=!!checkState[i.dataset.check];i.addEventListener("change",()=>{checkState[i.dataset.check]=i.checked;writeStoredValue("chongqing-checklist",JSON.stringify(checkState));updateReadiness();});});
+const savedCheckState=readStoredJSON("chongqing-checklist",{}),checkState=savedCheckState&&typeof savedCheckState==="object"&&!Array.isArray(savedCheckState)?savedCheckState:{};qsa("[data-check]").forEach(i=>{const hasSaved=Object.prototype.hasOwnProperty.call(checkState,i.dataset.check);i.checked=hasSaved?!!checkState[i.dataset.check]:i.dataset.confirmed==="true";i.addEventListener("change",()=>{checkState[i.dataset.check]=i.checked;writeStoredValue("chongqing-checklist",JSON.stringify(checkState));updateReadiness();});});
 
 qs("#shareTrip")?.addEventListener("click",async()=>{const url=`${location.origin}${location.pathname}`;const data={title:"重慶七日行程｜山城慢旅",text:"2026/09/11—09/17 成都到重慶七日行程",url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(url);showToast("公開網址已複製");}}catch(error){if(error?.name!=="AbortError")showToast("暫時無法分享，請複製網址列");}});
 window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredInstallPrompt=e;});
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=3").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=4").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("chongqing-parent-mode","false")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);

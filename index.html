@@ -8,12 +8,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description" content="2026 年 9 月 11 日至 17 日，成都出發、重慶市區、武隆與澳門轉機返高雄的 7 天 6 夜獨旅行程。">
   <title>重慶七日行程｜山城慢旅</title>
-  <link rel="manifest" href="manifest.webmanifest?v=3">
+  <link rel="manifest" href="manifest.webmanifest?v=4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=3">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -28,7 +28,7 @@
       <div class="hero-content">
         <p class="eyebrow">2026/09/11—09/17 · 7 天 6 夜</p>
         <h1 id="hero-title">成都・重慶<br>七日行程</h1>
-        <p class="hero-copy">解放碑住 6 晚。老城、輕軌、武隆、南岸與磁器口都排好；9/17 暫定搭澳門航空轉機回高雄。</p>
+        <p class="hero-copy">解放碑住 6 晚。老城、輕軌、武隆、南岸與磁器口都排好；9/17 搭澳門航空 NX181、NX658 經澳門回高雄。</p>
         <div class="hero-actions"><a class="primary-button" href="#route">查看每日行程 <i data-lucide="arrow-down"></i></a></div>
       </div>
       <div class="trip-stamp" aria-label="旅行摘要"><span>重慶七日</span><strong id="countdown">準備出發</strong><small>重慶 6 晚 · 武隆 1 日 · 澳門轉機</small></div>
@@ -71,7 +71,7 @@
         <details class="ticket-checklist-panel">
           <summary><span class="ticket-summary-icon"><i data-lucide="tickets"></i></span><div><strong>購票日期總表</strong><small>共 5 項・依使用日期分開勾選</small></div><i data-lucide="chevron-down" class="ticket-summary-arrow"></i></summary>
           <div class="ticket-checklist-body">
-            <label><input type="checkbox" data-check="flight"><span></span><div><div class="ticket-date"><b>目前預計</b><em>使用 9/17</em></div><strong>澳門航空 CKG → MFM → KHH</strong><small>16:10 從 CKG T3 出發、澳門轉機 2 小時 55 分、23:00 抵達高雄第一航廈；截圖 TWD 8,810、托運 32 公斤，付款前重查。</small></div></label>
+            <label><input type="checkbox" data-check="flight" data-confirmed="true"><span></span><div><div class="ticket-date"><b>已出票・9/2</b><em>使用 9/17</em></div><strong>澳門航空 NX181 → NX658</strong><small>16:10 CKG T3 → 18:40 MFM；轉機 2 小時 55 分；21:35 MFM → 23:00 KHH 第一航廈。托運 32 公斤，報到時確認是否直掛。</small></div></label>
             <label><input type="checkbox" data-check="hotel"><span></span><div><div class="ticket-date"><b>機票後確認</b><em>入住 9/11–9/17</em></div><strong>解放碑住宿六晚</strong><small>選可免費取消、能以台胞證登記且靠近地鐵的飯店。</small></div></label>
             <label><input type="checkbox" data-check="train"><span></span><div><div class="ticket-date"><b>現在確認</b><em>使用 9/11</em></div><strong>成都 → 重慶高鐵</strong><small>確認爸媽出發機場後再選上車站；至少保留 60 分鐘換乘緩衝。</small></div></label>
             <label><input type="checkbox" data-check="wulong"><span></span><div><div class="ticket-date"><b>建議出發前一週</b><em>使用 9/14</em></div><strong>武隆正規一日團</strong><small>核對集合點、景區交通、門票、午餐與返回時間。</small></div></label>
@@ -95,8 +95,8 @@
   <aside class="trip-drawer" id="tripDrawer" aria-label="我的重慶收藏" aria-hidden="true"><div class="drawer-head"><div><span>旅行地點</span><h2>我的收藏</h2></div><button type="button" id="closeDrawer" aria-label="關閉收藏"><i data-lucide="x"></i></button></div><div class="drawer-summary"><span>2026/09/11</span><strong>7 天 6 夜</strong></div><div id="drawerSaved" class="drawer-saved"></div><div id="drawerEmpty" class="drawer-empty"><i data-lucide="heart"></i><strong>還沒有收藏地點</strong><p>在互動地圖按下愛心，地點就會集中在這裡。</p></div><div class="drawer-actions"><button type="button" id="copyPlan"><i data-lucide="copy"></i> 複製旅行摘要</button><button type="button" id="clearSaved"><i data-lucide="trash-2"></i> 清空收藏</button></div></aside>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <nav class="mobile-nav" aria-label="手機導覽"><a href="#route"><i data-lucide="calendar-days"></i><span>行程</span></a><a href="#map"><i data-lucide="map"></i><span>地圖</span></a><a href="#prepare"><i data-lucide="list-checks"></i><span>清單</span></a></nav>
-  <script src="assets/vendor/lucide.min.js?v=3"></script>
-  <script src="assets/vendor/leaflet/leaflet.js?v=3"></script>
-  <script src="app.js?v=3"></script>
+  <script src="assets/vendor/lucide.min.js?v=4"></script>
+  <script src="assets/vendor/leaflet/leaflet.js?v=4"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>
