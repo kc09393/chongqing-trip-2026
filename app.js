@@ -28,14 +28,14 @@ const itineraries = [
     ["上午","自然醒・洗衣・慢早餐","不設鬧鐘。先補眠、處理衣物與整理照片，中午前不排景點。","解放碑住宿區"],
     ["14:30","長江索道","依官方預約時段前往；若排隊過久，直接搭地鐵到上新街。","長江索道"],
     ["16:00","龍門浩老街・下浩里","逛青年主理人小店、文創與咖啡，沿山勢慢慢走，等待天色轉暗。","龍門浩・下浩里"],
-    ["19:00","南濱路夜景・餐吧","找能看江景的咖啡或餐吧吃晚餐；獨旅若喝酒控制一杯，回飯店直接叫車。","南濱路"]
+    ["19:00","南濱路夜景・餐吧","想認識人就選有吧台座或現場音樂的店，比坐獨立桌自然；控制酒量，回程自己叫車。","南濱路"]
   ]},
-  { date:"9/16", weekday:"三", title:"民主村・觀音橋夜生活", city:"九龍坡＋江北", lodging:"重慶", tone:"city", note:"最後完整一天改成年輕版：上午民主村 Citywalk，下午回飯店休息與打包，傍晚北倉、觀音橋，晚上九街或紫薇路二選一。想逛古鎮才把上午換回磁器口。", items:[
+  { date:"9/16", weekday:"三", title:"民主村・觀音橋交朋友", city:"九龍坡＋江北", lodging:"重慶", tone:"city", note:"把社交重點放在北倉、方圓 LIVE 與九街：先從展覽、興趣店或現場活動開話題，晚上再選熱鬧酒吧或能聊天的小酒館。下午照樣回飯店休息。", items:[
     ["10:30","民主村 Citywalk","紅磚社區、咖啡與小店集中，抓 2 小時慢逛；不要打擾巷內居民。","民主村"],
     ["13:30","回解放碑休息・先打包","下午留白，先整理返程行李；若下雨可直接延長休息。","解放碑住宿區"],
-    ["17:00","北倉文創街區","逛老倉庫改造的小店、展覽與咖啡，這站正式保留，不再只是可有可無。","北倉文創街區"],
-    ["19:00","觀音橋・北城天街","晚餐、潮流商場與街拍集中在這裡，順便買最後補給。","觀音橋步行街"],
-    ["21:30","九街／紫薇路二選一","想感受熱鬧夜生活選九街；想聊天、吃宵夜或小酒館選紫薇路。獨旅不跟陌生人換場，回程叫車。","九街"]
+    ["17:00","北倉文創街區","先看當晚有沒有展覽、工作坊或市集；有共同活動時，比直接搭訕更容易自然聊天。","北倉文創街區"],
+    ["19:00","觀音橋・方圓 LIVE","吃晚餐後逛動漫、潮流與興趣店；從展品或旅行話題開口，先認識同興趣的人。","觀音橋步行街"],
+    ["21:30","九街／紫薇路二選一","想熱鬧選九街，想好好聊天選紫薇路；優先吧台座、Livehouse 或有活動的店，不跟陌生人換場。","九街"]
   ]},
   { date:"9/17", weekday:"四", title:"澳門轉機・回高雄", city:"返程", lodging:"—", tone:"flight", note:"回程已出票：NX181 於 16:10 從 CKG T3 出發、18:40 抵達澳門；轉機 2 小時 55 分後搭 NX658，23:00 抵達 KHH 第一航廈。", items:[
     ["09:00","早餐、完成打包","只在解放碑附近活動；證件、行動電源與轉機資料放隨身包。","解放碑住宿區"],
@@ -75,14 +75,15 @@ const dayGuides = [
     ["bed-double","不設鬧鐘","武隆隔天先補眠、洗衣與整理照片，中午前不排景點。"],
     ["tram-front","索道預約","以官方實際時段為準；若排隊過久，直接搭地鐵到上新街。"],
     ["footprints","下浩里主理人街區","咖啡、餐飲、文創與小型展陳集中，傍晚比正中午更舒服。"],
-    ["moon-star","微醺但不趕場","南濱路只選一間能看夜景的店；獨旅控制飲酒，叫車回飯店。"]
+    ["moon-star","微醺但不趕場","南濱路只選一間有吧台座或現場音樂的店；從音樂、旅行或店內活動開話題。"]
   ],spot:["長江索道與南岸","上午先把體力養回來，午後才過江。索道、龍門浩、下浩里與南濱路串成同一段，不必來回折返。"]},
-  {effort:"中等・夜間可提前收",summary:"民主村 → 飯店休息 → 北倉 → 觀音橋 → 九街或紫薇路。白天 Citywalk、晚上看想熱鬧還是想放鬆。",facts:[
+  {effort:"中等・夜間可提前收",summary:"民主村 → 飯店休息 → 北倉 → 方圓 LIVE → 九街或紫薇路。先用共同興趣認識人，晚上再決定是否續攤。",facts:[
     ["coffee","民主村上午","紅磚老社區加上咖啡、文創與小店，適合慢拍；磁器口改成想看古鎮時的替代方案。"],
     ["bed-double","午後休息","13:30 左右回飯店避熱並先完成打包，晚上才玩得安心。"],
-    ["store","北倉與觀音橋","北倉看文創小店，觀音橋負責晚餐、商場與街拍，兩處距離近。"],
-    ["moon-star","夜生活二選一","九街較熱鬧；紫薇路偏餐酒館與聊天。獨旅保管好手機，不接受陌生人帶去別的店。"]
-  ],spot:["重慶年輕人的晚上","北倉、觀音橋與九街是一條順路的夜生活線；若不想喝酒，九街直接換成紫薇路吃宵夜或咖啡。"]},
+    ["store","共同興趣比較好聊","北倉找展覽或活動，方圓 LIVE 看動漫與潮流內容；先聊眼前的東西，不必硬搭訕。"],
+    ["moon-star","夜生活二選一","九街較熱鬧；紫薇路偏餐酒館與聊天。酒杯不離視線，不接受陌生人帶去別的店。"],
+    ["badge-check","想一起回住宿時","先確認對方已成年、雙方都明確同意；飯店訪客登記規定先問櫃台，任何一方反悔就停止。"]
+  ],spot:["重慶年輕人的晚上","北倉、方圓 LIVE、觀音橋與九街是一條順路的青年夜生活線；不喝酒也能靠展覽、動漫、咖啡與現場活動認識人。"]},
   {effort:"返程日・時間固定",summary:"早餐 → 退房 → CKG T3 → 澳門轉機 → 高雄。12:30 是離開市區的建議底線。",facts:[
     ["badge-check","回程已出票","9/17 搭 NX181、NX658 經澳門回高雄；兩段皆為澳門航空。"],
     ["luggage","托運 32 公斤","畫面標示托運行李 32 公斤；訂票後核對是否全程直掛高雄，以及手提行李限制。"],
@@ -301,6 +302,6 @@ window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredIns
 qs("#installTrip")?.addEventListener("click",async()=>{if(matchMedia("(display-mode: standalone)").matches)return showToast("已經加入手機桌面");if(deferredInstallPrompt){await deferredInstallPrompt.prompt();deferredInstallPrompt=null;return;}showToast("iPhone：按分享，再選「加入主畫面」");});
 qsa('a[href="#map"]').forEach(a=>a.addEventListener("click",()=>{qs("#mapDetails").open=true;refreshMapLayout();}));
 qs("#mapDetails")?.addEventListener("toggle",e=>{if(e.currentTarget.open)refreshMapLayout();});
-if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=6").catch(()=>{}));
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js?v=7").catch(()=>{}));
 qs(".back-top").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
 setParentMode(readStoredValue("chongqing-parent-mode","false")==="true");qs("#savedCount").textContent=saved.size;renderAllDays();renderDays();renderDrawer();updateReadiness();updateCountdown();refreshIcons();renderMapData(false);
