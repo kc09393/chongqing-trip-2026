@@ -1039,6 +1039,14 @@ body{
 
 .site-header{
   grid-template-columns:auto 1fr;
+  position:sticky;
+  top:0;
+  z-index:60;
+  color:white;
+  background:rgba(7,22,34,.97);
+  border-bottom:1px solid rgba(255,255,255,.16);
+  box-shadow:0 8px 28px rgba(4,18,30,.16);
+  backdrop-filter:blur(14px);
 }
 
 .header-actions{
@@ -1058,7 +1066,7 @@ body{
 }
 
 .route-section{
-  padding-top:76px;
+  padding-top:38px;
   padding-bottom:62px;
 }
 
@@ -1369,7 +1377,7 @@ body{
   }
 
   .route-section{
-    padding:52px 16px 38px;
+    padding:18px 16px 38px;
   }
 
   .route-section .section-heading{

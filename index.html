@@ -8,12 +8,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description" content="2026 年 9 月 11 日至 17 日，成都出發、重慶市區、武隆與澳門轉機返高雄的 7 天 6 夜獨旅行程。">
   <title>重慶七日行程｜山城慢旅</title>
-  <link rel="manifest" href="manifest.webmanifest?v=5">
+  <link rel="manifest" href="manifest.webmanifest?v=6">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=5">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -22,21 +22,8 @@
   </header>
 
   <main>
-    <section class="hero" id="overview" aria-labelledby="hero-title">
-      <img src="assets/chongqing-hero.png" alt="入夜後的重慶山城、江面與穿樓軌道列車" fetchpriority="high">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">2026/09/11—09/17 · 7 天 6 夜</p>
-        <h1 id="hero-title">成都・重慶<br>七日行程</h1>
-        <p class="hero-copy">解放碑住 6 晚。老城街拍、鵝嶺二廠、下浩里、民主村與觀音橋夜生活都排好；9/17 搭澳門航空 NX181、NX658 回高雄。</p>
-        <div class="hero-actions"><a class="primary-button" href="#route">查看每日行程 <i data-lucide="arrow-down"></i></a></div>
-      </div>
-      <div class="trip-stamp" aria-label="旅行摘要"><span>重慶七日</span><strong id="countdown">準備出發</strong><small>重慶 6 晚 · 武隆 1 日 · 澳門轉機</small></div>
-    </section>
-
     <section class="section route-section" id="route">
-      <div class="section-heading"><div><p class="eyebrow dark">每日行程</p><h2>選日期，照時間往下走</h2></div><p>行程當天只要看這一區；介紹和地圖需要時再展開。</p></div>
-      <div class="mobile-day-picker"><label for="mobileDaySelect">今天是哪一天？</label><select id="mobileDaySelect" aria-label="選擇行程日期"></select></div>
+      <div class="mobile-day-picker"><label for="mobileDaySelect">選擇日期</label><select id="mobileDaySelect" aria-label="選擇行程日期"></select></div>
       <div class="day-tabs seven-days" id="dayTabs" role="tablist" aria-label="每日行程"></div>
       <div class="day-overview" id="dayOverview" aria-live="polite"></div>
       <div id="timeline" class="timeline" aria-live="polite"></div>
@@ -66,7 +53,7 @@
     </section>
 
     <section class="prepare-section" id="prepare">
-      <div class="prepare-copy"><p class="eyebrow">出發前完成</p><h2>購票、住宿與行李</h2><p>購票與住宿分開收合；每完成一項就勾起來，狀態會保留在手機。</p></div>
+      <div class="prepare-copy"><p class="eyebrow">出發前完成</p><h2>只看剩下要處理的事</h2><p>已出票的回程保留紀錄；高鐵、住宿、三峽博物館與武隆仍要逐項確認。</p></div>
       <div class="checklist" id="checklist">
         <details class="ticket-checklist-panel">
           <summary><span class="ticket-summary-icon"><i data-lucide="tickets"></i></span><div><strong>購票日期總表</strong><small>共 6 項・出發前逐項確認</small></div><i data-lucide="chevron-down" class="ticket-summary-arrow"></i></summary>
@@ -96,8 +83,8 @@
   <aside class="trip-drawer" id="tripDrawer" aria-label="我的重慶收藏" aria-hidden="true"><div class="drawer-head"><div><span>旅行地點</span><h2>我的收藏</h2></div><button type="button" id="closeDrawer" aria-label="關閉收藏"><i data-lucide="x"></i></button></div><div class="drawer-summary"><span>2026/09/11</span><strong>7 天 6 夜</strong></div><div id="drawerSaved" class="drawer-saved"></div><div id="drawerEmpty" class="drawer-empty"><i data-lucide="heart"></i><strong>還沒有收藏地點</strong><p>在互動地圖按下愛心，地點就會集中在這裡。</p></div><div class="drawer-actions"><button type="button" id="copyPlan"><i data-lucide="copy"></i> 複製旅行摘要</button><button type="button" id="clearSaved"><i data-lucide="trash-2"></i> 清空收藏</button></div></aside>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <nav class="mobile-nav" aria-label="手機導覽"><a href="#route"><i data-lucide="calendar-days"></i><span>行程</span></a><a href="#map"><i data-lucide="map"></i><span>地圖</span></a><a href="#prepare"><i data-lucide="list-checks"></i><span>清單</span></a></nav>
-  <script src="assets/vendor/lucide.min.js?v=5"></script>
-  <script src="assets/vendor/leaflet/leaflet.js?v=5"></script>
-  <script src="app.js?v=5"></script>
+  <script src="assets/vendor/lucide.min.js?v=6"></script>
+  <script src="assets/vendor/leaflet/leaflet.js?v=6"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>

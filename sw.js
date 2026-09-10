@@ -1,4 +1,4 @@
-const CACHE_NAME = "chongqing-seven-day-trip-v5";
+const CACHE_NAME = "chongqing-seven-day-trip-v6";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -6,7 +6,6 @@ const APP_SHELL = [
   "./app.js",
   "./manifest.webmanifest",
   "./assets/app-icon.svg",
-  "./assets/chongqing-hero.png",
   "./assets/attractions/hongya.jpg",
   "./assets/attractions/liziba.jpg",
   "./assets/attractions/wulong.jpg",
